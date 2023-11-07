@@ -63,7 +63,7 @@
       extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
       initialHashedPassword = "$y$j9T$P1yrgL3chk3pxipEOxT2f.$EY4orcr75/fiPq9wxXt/lrZRPNqJq8Q4Ctkau679q30";
       openssh.authorizedKeys.keys = [
-      	"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMwe9uMdFhyoUYdNSb/K0Euf3tior9qzfrXso7grRfEX mike"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJkGWvQJCL0u/bDMDLqHK/rlQ7HsNwNE3r9mH1MuL+9V mike"
       ];
     };
   };
