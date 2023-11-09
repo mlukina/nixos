@@ -11,10 +11,11 @@
       ./zfs.nix
     ];
 
-  # Enable flakes and the new CLI tools
+  # Enable flakes and the new CLI tools.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Use the systemd-boot EFI boot loader.
+  # Use the systemd-boot EFI boot loader. It must be used as the boot loader
+  # when setting up Secure Boot (lanzaboote).
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -61,7 +62,7 @@
     users.mike = {
       isNormalUser = true;
       extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-      initialHashedPassword = "$y$j9T$P1yrgL3chk3pxipEOxT2f.$EY4orcr75/fiPq9wxXt/lrZRPNqJq8Q4Ctkau679q30";
+      initialHashedPassword = "$y$j9T$P1yrgL3chk3pxipEOxT2f.$EY4orcr75/fiPq9wxXt/lrZRPNqJq8Q4Ctkau679q30"; # To generate a hashed password run mkpasswd.
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJkGWvQJCL0u/bDMDLqHK/rlQ7HsNwNE3r9mH1MuL+9V mike"
       ];
