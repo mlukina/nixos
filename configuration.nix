@@ -62,7 +62,7 @@
     users.mike = {
       isNormalUser = true;
       extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-      initialHashedPassword = "$y$j9T$P1yrgL3chk3pxipEOxT2f.$EY4orcr75/fiPq9wxXt/lrZRPNqJq8Q4Ctkau679q30"; # To generate a hashed password run mkpasswd.
+      initialHashedPassword = "$y$j9T$LjVOA/SsrvUeUctOO.Yjs/$dOzecRCJChoobWdc6fdpTyRyW07umM/HwFfy03LItR7"; # To generate a hashed password run mkpasswd.
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJkGWvQJCL0u/bDMDLqHK/rlQ7HsNwNE3r9mH1MuL+9V mike"
       ];
